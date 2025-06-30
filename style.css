@@ -1,0 +1,31 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+/* Custom scrollbar for a more modern look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a202c;
+}
+::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
