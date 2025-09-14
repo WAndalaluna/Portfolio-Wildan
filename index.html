@@ -162,100 +162,70 @@
         <!-- Projects Section -->
         <section id="projects" class="py-20 md:py-32">
             <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-4">My Projects</h2>
-            <p class="text-center text-gray-400 max-w-3xl mx-auto mb-12">
-                Here are a few projects I've worked on recently. Want to see more? Email me at
-                <a href="mailto:wildanandalaluna@gmail.com" class="text-cyan-400 hover:underline">
-                    wildanandalaluna@gmail.com
-                </a> or check out my <a href="https://github.com/WAndalaluna" class="text-cyan-400 hover:underline">
-                    Github </a> profile!
+            <p class="text-center text-gray-400 max-w-3xl mx-auto mb-8">
+                Here are a some selected projects I've worked on recently. Want to see more? Email me at
+                <a href="mailto:wildanandalaluna@gmail.com"
+                    class="text-cyan-400 hover:underline">wildanandalaluna@gmail.com</a>.
             </p>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card 1 -->
-                <div
-                    class="bg-gray-800 rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
-                    <div class="p-6 flex flex-col items-center justify-center min-h-[260px]">
+
+            <!-- Horizontal slider container -->
+            <div class="relative">
+                <!-- optional arrows -->
+                <button id="proj-prev"
+                    class="hidden md:flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-gray-800/60 hover:bg-gray-800 text-white">
+                    ‹
+                </button>
+                <button id="proj-next"
+                    class="hidden md:flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-gray-800/60 hover:bg-gray-800 text-white">
+                    ›
+                </button>
+
+                <!-- scrollable strip -->
+                <div id="projects-strip"
+                    class="flex gap-8 overflow-x-auto pb-6 px-4 md:px-0 snap-x snap-mandatory scrollbar-hide">
+                    <!-- each card: keep min-w so they don't wrap -->
+                    <!-- Project Card 1 -->
+                    <div class="bg-gray-800 rounded-lg min-w-[300px] w-80 flex-shrink-0 p-6 snap-center shadow-lg">
+                        <!-- ...content (same as your existing card markup) ... -->
                         <h3 class="text-3xl font-bold mb-2"
-                            style="font-family: 'Indie Flower', cursive; color: #22d3ee;">
-                            Noteboost
-                        </h3>
+                            style="font-family: 'Indie Flower', cursive; color: #22d3ee;">Noteboost</h3>
                         <div class="text-lg font-bold text-white mb-2">AI powered note-taking app</div>
-                        <p class="text-gray-400 mb-6 text-justify">
-                            A web-based application that has the main purpose as a complement to automatic student
-                            records.
-                        </p>
-                        <div class="flex flex-col items-center">
-                            <a href="https://github.com/raythrp/NoteBoost.git" target="_blank" rel="noopener noreferrer"
-                                class="inline-flex items-center px-5 py-2 bg-gray-900 text-white rounded-full shadow hover:bg-cyan-500 transition-colors font-semibold text-lg mr-2">
-                                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                View on GitHub
-                            </a>
-                            <a href="https://noteboost.site" target="_blank" rel="noopener noreferrer"
-                                class="inline-flex items-center px-5 py-2 bg-cyan-500 text-white rounded-full shadow hover:bg-cyan-600 transition-colors font-semibold text-lg mt-3">
-                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M14 3v4a1 1 0 0 0 1 1h4M5 12h14M12 5v14" />
-                                </svg>
-                                Live Demo
-                            </a>
-                        </div>
+                        <p class="text-gray-400 mb-6 text-justify">A web-based application ...</p>
+                        <a href="https://github.com/raythrp/NoteBoost.git"
+                            class="inline-flex items-center px-4 py-2 bg-gray-900 text-white rounded-full">View on
+                            GitHub</a>
                     </div>
-                </div>
-                <!-- Project Card 2 -->
-                <div
-                    class="bg-gray-800 rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
-                    <div class="p-6 flex flex-col items-center justify-center min-h-[260px]">
+
+                    <!-- Project Card 2 -->
+                    <div class="bg-gray-800 rounded-lg min-w-[300px] w-80 flex-shrink-0 p-6 snap-center shadow-lg">
                         <h3 class="text-3xl font-bold mb-2"
-                            style="font-family: 'Indie Flower', cursive; color: #22d3ee;">
-                            Ping!
-                        </h3>
+                            style="font-family: 'Indie Flower', cursive; color: #22d3ee;">Ping!</h3>
                         <div class="text-lg font-bold text-white mb-2">Kaki Lima Tracking App</div>
-                        <p class="text-gray-400 mb-6 text-justify">
-                            Innovative solution designed to empower street vendors and improve accessibility for
-                            customers seeking local, authentic food and goods that aims to bridge the gap between
-                            traditional street vending and modern technology, making it easier for vendors and customers
-                            to connect, transact, and thrive in an increasingly digital world.
-                        </p>
-                        <a href="https://github.com/Bangkit-KakiLima/Bangkit-KakiLima-Main.git" target="_blank"
-                            rel="noopener noreferrer"
-                            class="inline-flex items-center px-5 py-2 bg-gray-900 text-white rounded-full shadow hover:bg-cyan-500 transition-colors font-semibold text-lg">
-                            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            View on GitHub
-                        </a>
+                        <p class="text-gray-400 mb-6 text-justify">Innovative solution designed ...</p>
+                        <a href="https://github.com/Bangkit-KakiLima/Bangkit-KakiLima-Main.git"
+                            class="inline-flex items-center px-4 py-2 bg-gray-900 text-white rounded-full">View on
+                            GitHub</a>
                     </div>
-                </div>
-                <!-- Project Card 3 -->
-                <div
-                    class="bg-gray-800 rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
-                    <div class="p-6 flex flex-col items-center justify-center min-h-[260px]">
+
+                    <!-- Project Card 3 -->
+                    <div class="bg-gray-800 rounded-lg min-w-[300px] w-80 flex-shrink-0 p-6 snap-center shadow-lg">
                         <h3 class="text-3xl font-bold mb-2"
-                            style="font-family: 'Indie Flower', cursive; color: #22d3ee;">
-                            Image clustering
-                        </h3>
+                            style="font-family: 'Indie Flower', cursive; color: #22d3ee;">Image clustering</h3>
                         <div class="text-lg font-bold text-white mb-2">Using K-Means dan DBSCAN</div>
-                        <p class="text-gray-400 mb-6 text-justify">
-                            This application is a streamlit project that segments image using two clustering methods:
-                            K-Means and DBScan. Users can upload images, choose clustering methods, and see clustering
-                            results in the form of segmented images.
-                        </p>
-                        <a href="https://github.com/WAndalaluna/Clustering-web-app.git" target="_blank"
-                            rel="noopener noreferrer"
-                            class="inline-flex items-center px-5 py-2 bg-gray-900 text-white rounded-full shadow hover:bg-cyan-500 transition-colors font-semibold text-lg">
-                            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            View on GitHub
-                        </a>
+                        <p class="text-gray-400 mb-6 text-justify">This application is a streamlit project ...</p>
+                        <a href="https://github.com/WAndalaluna/Clustering-web-app.git"
+                            class="inline-flex items-center px-4 py-2 bg-gray-900 text-white rounded-full">View on
+                            GitHub</a>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="bg-gray-800 rounded-lg min-w-[300px] w-80 flex-shrink-0 p-6 snap-center shadow-lg">
+                        <h3 class="text-3xl font-bold mb-2"
+                            style="font-family: 'Indie Flower', cursive; color: #22d3ee;">Project Four</h3>
+                        <div class="text-lg font-bold text-white mb-2">HR Support Chatbot Using n8n</div>
+                        <p class="text-gray-400 mb-6 text-justify">building a custom AI-powered ...</p>
+                        <a href="https://bit.ly/HR-Support-Chatbot"
+                            class="inline-flex items-center px-4 py-2 bg-cyan-500 text-white rounded-full">Live Demo</a>
                     </div>
                 </div>
             </div>
